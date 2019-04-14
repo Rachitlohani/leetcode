@@ -8,12 +8,12 @@ Deployment | Maintains a set of identical pods, ensuring that they have the corr
 
 
 ### Pods
-*Runs a single set of containers
-*Good for one-off dev purposes
-*Rarely used directly in production
+1.Runs a single set of containers
+2.Good for one-off dev purposes
+3.Rarely used directly in production
 
 ### Deployment
-*Runs a set of identical pods
+1.Runs a set of identical pods
 *Monitors the state of each pod, updating as necessary
 *Good for dev
 *Good for production
