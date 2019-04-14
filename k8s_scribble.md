@@ -1,4 +1,4 @@
-###Kubernetes has three Object Types you should know about:
+### Kubernetes has three Object Types you should know about:
 
 Object|Purpose
 ---|---
@@ -7,12 +7,12 @@ Services | sets up networking in a Kubernetes cluster
 Deployment | Maintains a set of identical pods, ensuring that they have the correct config and that the right number of them exist.
 
 
-###Pods
+### Pods
 *Runs a single set of containers
 *Good for one-off dev purposes
 *Rarely used directly in production
 
-###Deployment
+### Deployment
 *Runs a set of identical pods
 *Monitors the state of each pod, updating as necessary
 *Good for dev
@@ -22,5 +22,3 @@ Deployment | Maintains a set of identical pods, ensuring that they have the corr
 So, instead of struggling with error messages such as this one:
 
 `Forbidden: pod updates may not change fields other than spec.containers[*].image`
-
-So just refactor or completely recreate your Pod into a Deployment that creates a pod to do what you need done. With Deployment you can change any piece of configuration you want to and you need not worry about seeing that error message.
