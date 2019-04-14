@@ -13,12 +13,11 @@ Deployment | Maintains a set of identical pods, ensuring that they have the corr
 3.Rarely used directly in production
 
 ### Deployment
-1.Runs a set of identical pods
-*Monitors the state of each pod, updating as necessary
-*Good for dev
-*Good for production
-*And I would agree with other answers, forget about Pods and just use Deployment. Why? Look at the second bullet point, it monitors the state of each pod, updating as necessary.
+1. Runs a set of identical pods
+2. Monitors the state of each pod, updating as necessary
+3. Good for dev
+4. Good for production
 
-So, instead of struggling with error messages such as this one:
+So, instead of struggling with error messages such as the following, just stick with deployment object. 
 
 `Forbidden: pod updates may not change fields other than spec.containers[*].image`
